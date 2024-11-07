@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 
-export default function Account() {
+export default function Login() {
     const [number, setNumber] = useState(0)
 
     const numGoUp = () => {
