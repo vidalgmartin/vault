@@ -1,25 +1,24 @@
 import Link from "next/link"
-import '../account.css'
 
-export default function Login() {
+export default function Signup() {
 
     return (
         <div className="auth-page">
-
+        
             <form>
                 <div className="auth-labels">
-                    <p>Login</p>
-
-                    <Link href="/account/signup">
-                        <span>Signup</span>
+                    <Link href="/account/login">
+                        <span>Login</span>
                     </Link>
+
+                    <p>Signup</p>
                 </div>
 
                 <label>Email:</label>
                 <input
                     type="email" 
                 />
-
+                
                 <label>Password:</label>
                 <input 
                     type="password"

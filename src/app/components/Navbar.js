@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation"
 import Link from "next/link"
+import './components.css'
 
 export default function Navbar() {
     const router = useRouter()
@@ -12,9 +13,8 @@ export default function Navbar() {
 
     return (
         <nav>
-            <span>Logo</span>
             <Link href="/">
-                <button>Home</button>
+                <span>Logo</span>
             </Link>
             <button onClick={goToLogin}>Login</button>
         </nav>
